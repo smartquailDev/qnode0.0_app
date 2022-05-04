@@ -301,24 +301,24 @@ USE_TZ = True
 
 
 
-STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/'
+#STATIC_URL = '/static/static/'
+#MEDIA_URL = '/static/media/'
 
-MEDIA_ROOT = '/vol/web/static'
-STATIC_ROOT =  '/vol/web/media'
+#MEDIA_ROOT = '/vol/web/static'
+#STATIC_ROOT =  '/vol/web/media'
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
  #Deploy Project- Don`t touch 
-#STATIC_ROOT = BASE_DIR / "staticfiles-cdn"
+STATIC_ROOT = BASE_DIR / "staticfiles-cdn"
 
-#STATICFILES_DIRS = [
- #   BASE_DIR / "staticfiles"
-#]
+STATICFILES_DIRS = [
+    BASE_DIR / "staticfiles"
+]
 
-#from .cdn.conf import * #noqa
+from .cdn.conf import * #noqa
 
 
