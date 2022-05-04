@@ -305,8 +305,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
-MEDIA_ROOT = '/vol/web/static/'
-STATIC_ROOT =  '/vol/web/media/'
+MEDIA_ROOT = '/static/'
+STATIC_ROOT =  '/media/'
 
 
 # Default primary key field type
