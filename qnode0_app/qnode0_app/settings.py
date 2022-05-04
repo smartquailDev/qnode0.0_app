@@ -299,14 +299,13 @@ USE_TZ = True
 #STATIC_URL = 'qnode0/static/'
 
 
-#STATIC_URL = '/vol/web/static/'
-#MEDIA_URL = '/vol/web/media/'
 
-STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
 
-MEDIA_ROOT = '/static/'
-STATIC_ROOT =  '/media/'
+STATIC_URL = '/static/static'
+MEDIA_URL = '/static/media/'
+
+MEDIA_ROOT = '/vol/web/static'
+STATIC_ROOT =  '/vol/web/media'
 
 
 # Default primary key field type
@@ -317,7 +316,7 @@ STATIC_ROOT =  '/media/'
 #STATIC_ROOT = BASE_DIR / "staticfiles-cdn"
 
 #STATICFILES_DIRS = [
-#    BASE_DIR / "staticfiles"
+ #   BASE_DIR / "staticfiles"
 #]
 
 #from .cdn.conf import * #noqa
