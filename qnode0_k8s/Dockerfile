@@ -20,7 +20,7 @@ COPY ./scripts /scripts
 WORKDIR /qnode0.0_app/qnode0_app/
 EXPOSE 443 
 EXPOSE 25
-EXPOSE 8000
+EXPOSE 9000
 
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
@@ -69,4 +69,4 @@ ENV PATH="/scripts:/py/bin:$PATH"
 
 USER qnode0
 
-CMD ["gunicorn_run.sh"]
+CMD ["run.sh"]
