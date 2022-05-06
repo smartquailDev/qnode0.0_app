@@ -302,7 +302,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/static/'
-MEDIA_URL = 'static/media/'
+MEDIA_URL = '/static/media/'
 
 #MEDIA_ROOT = '/media'
 #STATIC_ROOT =  '/static'
