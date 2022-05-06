@@ -39,18 +39,22 @@ RUN python -m venv /py && \
     apk add libressl-dev  && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home qnode0 && \
-    mkdir -p /vol/web/static && \
-    mkdir -p /vol/web/media && \
+    mkdir -p qnode0_app/static && \
+    mkdir -p qnode0_app/media && \
+
+    chmod -R 755 qnode0_app/static  && \
+    chown -R qnode0:qnode0 qnode0_app/static && \
+
     mkdir -p /qnode0.0_app/qnode0_app/run/ && \
     mkdir -p /var/log/gunicorn &&\
     chown -R qnode0:qnode0 /var/log/gunicorn &&\
-    chown -R qnode0:qnode0 /vol && \
+    
     chmod -R 755 /qnode0.0_app/qnode0_app/ && \
-    chmod -R 755 /vol  && \
+    
     chmod -R 755 /scripts  && \
     chown -R qnode0:qnode0 /qnode0.0_app/qnode0_app/run/  && \
     chmod -R 755 /var/log/gunicorn  && \
-    chown -R qnode0:qnode0  /vol/web/static && \
+    
     chmod -R u+x /scripts/gunicorn_run.sh &&\
     chmod -R +x /scripts
 
