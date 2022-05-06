@@ -41,8 +41,12 @@ RUN python -m venv /py && \
     adduser --disabled-password --no-create-home qnode0 && \
     mkdir -p /qnode0.0_app/qnode0_app/static && \
     mkdir -p /qnode0.0_app/qnode0_app/static/media && \
-
     chmod -R 755 /qnode0.0_app/qnode0_app/static  && \
+    
+    mkdir -p /qnode0.0_app/qnode0_app/staticfiles && \
+    chmod -R 755 /qnode0.0_app/qnode0_app/staticfiles  && \
+    chown -R qnode0:qnode0 /qnode0.0_app/qnode0_app/staticfiles && \
+
     chmod -R 755 /qnode0.0_app/qnode0_app/static/media  && \
     chown -R qnode0:qnode0 /qnode0.0_app/qnode0_app/static && \
     chown -R qnode0:qnode0 /qnode0.0_app/qnode0_app/static/media && \
