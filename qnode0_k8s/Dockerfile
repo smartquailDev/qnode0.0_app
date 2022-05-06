@@ -40,7 +40,7 @@ RUN python -m venv /py && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home qnode0 && \
     mkdir -p /qnode0.0_app/qnode0_app/static && \
-    mkdir -p /qnode0.0_app/qnode0_app/media && \
+    mkdir -p /qnode0.0_app/qnode0_app/static/media && \
 
     chmod -R 755 /qnode0.0_app/qnode0_app/static  && \
     chmod -R 755 /qnode0.0_app/qnode0_app/static/media  && \
