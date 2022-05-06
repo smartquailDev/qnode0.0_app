@@ -301,20 +301,25 @@ USE_TZ = True
 
 
 
-STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/'
+MEDIA_URL = '/media/'
 
 #MEDIA_ROOT = '/media'
 #STATIC_ROOT =  '/static'
 
-MEDIA_ROOT = '/media'
-STATIC_ROOT =  '/static'
+MEDIA_ROOT = '/Users/smartquailops/Desktop/qnode0.0_app/qnode0_app/media/'
+
+#Static files DevMod
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]  
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
+
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
  #Deploy Project- Don`t touch 
 #STATIC_ROOT = BASE_DIR / "staticfiles-cdn"
 
