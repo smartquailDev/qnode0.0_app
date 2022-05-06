@@ -62,6 +62,7 @@ RUN python -m venv /py && \
     chmod -R 755 /var/log/gunicorn  && \
     
     chmod -R u+x /scripts/gunicorn_run.sh &&\
+    chmod -R u+x /scripts/run.sh &&\
     chmod -R +x /scripts
 
 ENV PATH="/scripts:/py/bin:$PATH"
