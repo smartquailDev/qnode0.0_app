@@ -307,8 +307,8 @@ MEDIA_URL = '/media/'
 #MEDIA_ROOT = '/media'
 #STATIC_ROOT =  '/static'
 
-MEDIA_ROOT = 'qnode0_app/static'
-STATIC_ROOT =  'qnode0_app/media'
+MEDIA_ROOT = '/static'
+STATIC_ROOT =  '/media'
 
 
 # Default primary key field type
