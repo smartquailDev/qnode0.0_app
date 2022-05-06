@@ -307,8 +307,8 @@ MEDIA_URL = '/static/media/'
 #MEDIA_ROOT = '/media'
 #STATIC_ROOT =  '/static'
 
-MEDIA_ROOT = '/static'
-STATIC_ROOT =  '/media'
+MEDIA_ROOT = '/media'
+STATIC_ROOT =  '/static'
 
 
 # Default primary key field type
