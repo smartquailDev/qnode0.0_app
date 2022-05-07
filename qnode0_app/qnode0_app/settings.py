@@ -298,6 +298,9 @@ USE_TZ = True
 
 
 
+
+
+
 #Static files DevMod
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]  
@@ -305,8 +308,9 @@ STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 MEDIA_URL = "/media/"
-MEDIAFILES_DIRS = [BASE_DIR / "media"]  
-MEDIA_ROOT = MEDIA_ROOT = BASE_DIR / "mediafiles"
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
+
+
 
 
 
