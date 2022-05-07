@@ -296,23 +296,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-#STATIC_URL = 'qnode0/static/'
 
-
-
-
-MEDIA_URL = '/media/'
-
-#MEDIA_ROOT = '/media'
-#STATIC_ROOT =  '/static'
-
-MEDIA_ROOT = '/Users/smartquailops/Desktop/qnode0.0_app/qnode0_app/media/'
 
 #Static files DevMod
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]  
 STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
+
+MEDIA_URL = "/media/"
+MEDIAFILES_DIRS = [BASE_DIR / "media"]  
+MEDIA_ROOT = STATIC_ROOT = BASE_DIR / "media"
+
 
 
 
