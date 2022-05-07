@@ -97,8 +97,8 @@ WAGTAILSEARCH_BACKENDS = {
 }
 
 #WagtailAnalitycs
-#GA_KEY_CONTENT = 'content_of_your_key.json'
-#GA_VIEW_ID = 'ga:xxxxxxxx'
+GA_KEY_CONTENT = os.environ.get('GA_KEY_CONTENT_ENV')
+GA_VIEW_ID = os.environ.get('GA_VIEW_ID_ENV')
 
 
 WAGTAIL_SITE_NAME = 'Smart Business Media'
