@@ -1,14 +1,14 @@
 django>=3.2,<4.0
 django-baton
 #Wagtail
-wagtail==2.16.2
+wagtail
 
 django-social-share
 wagtailgmaps
 wagalytics==1.3
 requests
 #gunicorn
-uWSGI==2.0.20
+uWSGI
 redis
 django-dotenv
 psycopg2-binary
